@@ -1,0 +1,142 @@
+.checked {
+    color: orange;
+  }
+  
+  .jumbotron {
+      margin-bottom: 0px;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url("./images/schedule.jpg");
+  
+    /* Set a specific height */
+    min-height: 700px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.categoryItem {
+    margin-left: 20px;
+    border: solid 2px lightblue;
+    border-radius: 30px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.formContainer {
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+#personalCard {
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    margin:5% auto; 
+    padding:2%; 
+    width:30%; 
+    background:white;
+
+}
+
+.bodyLogin {
+    background-image: url("./images/bluebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+
+}
+
+.error  {
+    float: right;
+    color: red;
+}
+
+#timeSlots, #myTimeSlots {
+    position:absolute;
+    top:500px;
+    left: 60%;
+}
+
+.contactDiv {
+    display:inline-block;
+}
+
+.calendar {
+    display: flex;
+    flex-flow: column;
+    position:absolute;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.calendar .header .month-year {
+    font-size: 20px;
+    font-weight: bold;
+    color: #636e73;
+    padding: 20px 0;
+}
+.calendar .days {
+    display: flex;
+    flex-flow: wrap;
+}
+.calendar .days .dayName {
+    width: calc(100% / 7);
+    border-right: 1px solid #007bff;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #818589;
+    color: #fff;
+    background-color: #007bff;
+}
+.calendar .days .dayNum {
+    display: flex;
+    flex-flow: column;
+    width: calc(100% / 7);
+    border-right: 1px solid #e6e9ea;
+    border-bottom: 1px solid #e6e9ea;
+    padding: 15px;
+    font-weight: bold;
+    color: #7c878d;
+    cursor: pointer;
+    min-height: 100px;
+}
+.calendar .days .dayNum span {
+    display: inline-flex;
+    width: 30px;
+    font-size: 14px;
+}
+.calendar .days .dayNum .timeSlot.green {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    background-color: #51ce57;
+    color: #fff;
+    word-wrap: break-word;
+}
+
+.calendar .days .dayNum.ignore {
+    background-color: #fdfdfd;
+    color: #ced2d4;
+    cursor: inherit;
+}
+.calendar .days .dayNum.selected {
+    background-color: #f1f2f3;
+    cursor: inherit;
+}
+
+.dateNum {
+    height:100%;
+    width:100% !important;
+    cursor: pointer;
+}
